@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import './App.css'
 
 function App() {
   return (
@@ -230,8 +228,110 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="berry-section">
+            <div className="container justify-content-center">
+              <div className="row text-center">
+                <div className="col-sm-10 col-md-10 margin-coumns">
+                  <small>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                    lacinia odio vitae vestibulum vestibulum.
+                  </small>
+                </div>
+              </div>
+              <div className="row text-center">
+                <div className="col-sm-10 col-md-10 margin-coumns">
+                  <strong>Barry Henderson</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="subcribe-section">
+            <div className="container">
+              <div className="row text-center row-margin align-items-center justify-content-center">
+                <div className="col-sm-10 col-md-10 margin-coumns">
+                  <strong>Don't Miss Our Update</strong>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
+                  </p>
+                </div>
+              </div>
+              <div className="row align-items-center justify-content-center">
+                <div className="col-sm-10 col-md-8 margin-coumns">
+                  <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Your Email" />
+                    <span className="input-group-text" id="basic-addon2">Subscribe</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <footer className="footer">
-            <p>Created by you</p>
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-6 col-md-6 margin-coumns">
+                  <h6 className="">
+                    Title Here
+                    <span />
+                  </h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
+                    dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+                    dignissim enim.
+                  </p>
+                  <ul className="title-ul">
+                    <li className="title-li">
+                      <a href="#">
+                        <i className="fab fa-instagram title-i" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li className="title-li">
+                      <a href="#">
+                        <i className="fab fa-facebook title-i" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li className="title-li">
+                      <a href="#">
+                        <i className="fab fa-twitter title-i" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li className="title-li">
+                      <a href="#">
+                        <i className="fab fa-whatsapp title-i" aria-hidden="true" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-6 col-md-2 margin-coumns">
+                  <h6>About</h6>
+                  <ul className="about-ul">
+                    <li><a className="about-a" href="#">History</a></li>
+                    <li><a className="about-a" href="#">Our Team</a></li>
+                    <li><a className="about-a" href="#">Brand Guidelines</a></li>
+                    <li><a className="about-a" href="#">Terms & Conditions</a></li>
+                    <li><a className="about-a" href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div className="col-sm-6 col-md-2 margin-coumns">
+                  <h6>Services</h6>
+                  <ul className="about-ul">
+                    <li><a className="about-a" href="#">How to Order</a></li>
+                    <li><a className="about-a" href="#">Our Product</a></li>
+                    <li><a className="about-a" href="#">Order Status</a></li>
+                    <li><a className="about-a" href="#">Promo</a></li>
+                    <li><a className="about-a" href="#">Payment Method</a></li>
+                  </ul>
+                </div>
+                <div className="col-sm-6 col-md-2 margin-coumns">
+                  <h6>Other</h6>
+                  <ul className="about-ul">
+                    <li><a className="about-a" href="#">Contact Us</a></li>
+                    <li><a className="about-a" href="#">Help Us</a></li>
+                    <li><a className="about-a" href="#">Privacy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </footer>
         </main>
       </div>
