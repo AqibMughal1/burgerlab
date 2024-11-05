@@ -15,15 +15,18 @@
   font-display: swap;
 }
 
-
+/* Navbar *//* Navbar */
 .navbar {
-  padding: 59px 0px;
+  padding: 59px 0;
 }
 .navbar-light .navbar-toggler {
   background-color: white;
   border: none;
 }
+
+/* Header */
 header {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -37,7 +40,13 @@ header .container ul li a {
   font-size: 25px;
   font-family: "Poppins-SemiBold";
   font-weight: bold;
+  transition: color 0.3s ease;
 }
+header .container ul li a:hover {
+  color: #f64b3c !important;
+}
+
+/* Banner */
 .banner {
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
@@ -47,12 +56,69 @@ header .container ul li a {
 }
 .gradient {
   height: 200px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
 }
+
+/* Responsive Media Queries */
+@media (max-width: 1399px) {
+  .navbar {
+    padding: 40px 0;
+  }
+  header .container ul li {
+    padding-left: 20px;
+  }
+  header .container ul li a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 30px 0;
+  }
+  header .container ul li {
+    padding-left: 15px;
+  }
+  header .container ul li a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 20px 0;
+  }
+  header .container ul li {
+    padding-left: 10px;
+  }
+  header .container ul li a {
+    font-size: 18px;
+  }
+  .banner {
+    background-position: center center;
+    background-size: cover;
+  }
+  .gradient {
+    height: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    padding: 15px 0;
+  }
+  header .container ul li {
+    padding-left: 5px;
+  }
+  header .container ul li a {
+    font-size: 16px;
+  }
+  .gradient {
+    height: 100px;
+  }
+}
+
+/* Main Content */
 .main .discount {
   position: absolute;
   bottom: 0;
@@ -75,11 +141,13 @@ header .container ul li a {
   font-size: 91px;
   line-height: 99px;
   font-family: Archivo-Bold;
+  transition: font-size 0.3s ease;
 }
 .p1 {
   color: white;
   margin-bottom: 60px;
   font-size: 33px;
+  transition: font-size 0.3s ease;
 }
 .button1 {
   width: 322px;
@@ -92,7 +160,87 @@ header .container ul li a {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 70px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+.button1:hover {
+  background-color: #d93b32;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 30px 0;
+  }
+  header .container ul li {
+    padding-left: 20px;
+  }
+  header .container ul li a {
+    font-size: 20px;
+  }
+  .main.container {
+    left: 50px;
+    width: 80%;
+  }
+  .h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .p1 {
+    font-size: 24px;
+  }
+  .button1 {
+    width: 280px;
+    height: 55px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container ul li {
+    padding-left: 15px;
+  }
+  header .container ul li a {
+    font-size: 18px;
+  }
+  .main.container {
+    width: 90%;
+    left: 20px;
+  }
+  .h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .p1 {
+    font-size: 20px;
+  }
+  .button1 {
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 20px 0;
+  }
+  .h1 {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+  .p1 {
+    font-size: 18px;
+  }
+  .button1 {
+    width: 220px;
+    height: 45px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
 .chef {
   background-image: url("../images/bg-img2.png");
   background-repeat: no-repeat;
@@ -162,24 +310,38 @@ header .container ul li a {
   font-size: 25px;
   font-weight: bold;
 }
+/* Big Burger Section */
 .big-burger {
   background-image: url("../images/background.jpg");
-  /* height: 800px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 0;
+  padding: 80px 0;
+  text-align: center; /* Center-aligns content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adds space between elements */
 }
+
+/* Burger Image */
+.big-burger img {
+  width: 100%;
+  max-width: 600px; /* Limits the burger image width */
+  height: auto;
+  margin-bottom: 20px;
+}
+
 .big-burger h4 {
   color: #f64b3c;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 75px;
   line-height: 78px;
   font-family: Archivo-Bold;
 }
 .big-burger p {
   color: #f64b3c;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 29px;
   width: 80%;
 }
@@ -194,6 +356,72 @@ header .container ul li a {
   font-size: 25px;
   font-weight: bold;
 }
+
+/* Responsive Media Queries */
+@media (max-width: 1199px) {
+  .big-burger h4 {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .big-burger p {
+    font-size: 24px;
+    width: 85%;
+  }
+  .big-burger button {
+    width: 280px;
+    height: 60px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .big-burger h4 {
+    font-size: 50px;
+    line-height: 54px;
+  }
+  .big-burger p {
+    font-size: 22px;
+    width: 90%;
+  }
+  .big-burger button {
+    width: 250px;
+    height: 55px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .big-burger h4 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .big-burger p {
+    font-size: 20px;
+    width: 95%;
+  }
+  .big-burger button {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .big-burger h4 {
+    font-size: 35px;
+    line-height: 38px;
+  }
+  .big-burger p {
+    font-size: 18px;
+    width: 100%;
+  }
+  .big-burger button {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
 .statistics {
   background-color: #f64b3c;
   padding: 120px 0;
@@ -293,37 +521,45 @@ header .container ul li a {
   padding: 350px 0;
   filter: brightness(90%);
 }
+
 .berry-section small {
   font-size: 36px;
   color: white;
 }
+
 .berry-section strong {
   font-size: 49px;
   color: white;
 }
+
 .subcribe-section {
   background-image: url("../images/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0;
 }
+
 .subcribe-section strong {
   font-size: 75px;
   color: #f64b3c;
   font-weight: bold;
 }
+
 .subcribe-section p {
   font-size: 36px;
   color: #f64b3c;
 }
+
 .row-margin {
   margin-bottom: 40px;
 }
+
 .inp-div {
   width: 770px;
 }
+
 .subcribe-section input {
-  padding: 12px 0px;
+  padding: 12px 0;
   width: 100%;
   border-top-left-radius: 20px;
   border: none;
@@ -331,8 +567,9 @@ header .container ul li a {
   color: grey;
   font-size: 23px;
 }
+
 .subcribe-section button {
-  padding: 12px 0px;
+  padding: 12px 0;
   width: 100%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -341,18 +578,99 @@ header .container ul li a {
   background-color: #f64b3c;
   font-size: 23px;
 }
-.input-group input{
+
+.input-group input {
   padding-left: 15px;
 }
-.input-group span{
+
+.input-group span {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border: none;
   color: white;
   background-color: #f64b3c;
   font-size: 23px;
-
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .berry-section {
+    padding: 150px 0;
+  }
+
+  .berry-section small {
+    font-size: 24px;
+  }
+
+  .berry-section strong {
+    font-size: 36px;
+  }
+
+  .subcribe-section {
+    padding: 150px 0;
+  }
+
+  .subcribe-section strong {
+    font-size: 50px;
+  }
+
+  .subcribe-section p {
+    font-size: 24px;
+  }
+
+  .inp-div {
+    width: 100%;
+  }
+
+  .subcribe-section input,
+  .subcribe-section button {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  .input-group input,
+  .input-group span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .berry-section {
+    padding: 100px 0; 
+  }
+
+  .berry-section small {
+    font-size: 18px; 
+  }
+
+  .berry-section strong {
+    font-size: 24px; 
+  }
+
+  .subcribe-section {
+    padding: 100px 0; 
+  }
+
+  .subcribe-section strong {
+    font-size: 30px; 
+  }
+
+  .subcribe-section p {
+    font-size: 20px; 
+  }
+
+  .subcribe-section input,
+  .subcribe-section button {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .input-group input,
+  .input-group span {
+    font-size: 16px;
+  }
+}
+
 .footer {
   padding: 50px 0px;
   background-color: rgb(24, 24, 24);
