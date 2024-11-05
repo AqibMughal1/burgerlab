@@ -82,12 +82,6 @@ To get this project running locally:
 
 ## Screenshots
 
-### Desktop View
-![Desktop View](public/images/screenshot-desktop.png)
-
-### Mobile View
-![Mobile View](public/images/screenshot-mobile.png)
-
 ## License
 This project is open source and available under the [MIT License](LICENSE).
 
