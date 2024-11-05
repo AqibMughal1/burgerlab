@@ -80,7 +80,6 @@ To get this project running locally:
 2. Open `http://localhost:3000` in your browser to view the project.
 3. To customize sections or styles, edit the files in `src/components` and `public/css`.
 
-## Screenshots
 
 ## License
 This project is open source and available under the [MIT License](LICENSE).
