@@ -24,6 +24,22 @@
   border: none;
 }
 
+.collapse {
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .collapse {
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Adjust background opacity */
+  }
+}
+
+
+
 /* Header */
 header {
   position: fixed;
